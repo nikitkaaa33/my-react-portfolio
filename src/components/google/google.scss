@@ -1,0 +1,26 @@
+.google-form {
+	display: flex;
+	justify-content: space-around;
+	background: white;
+	padding: 20px;
+	min-height: 700px;
+	img {
+		height: 500px;
+		width: auto;
+		margin-top: 100px;
+	}
+	h2 {
+		padding: 10px;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 40px;
+		width: 350px;
+		text-align: center;
+		height: 80px;
+		justify-content: center;
+		background-color: #000000;
+		border-radius: 20px;
+		font-weight: bold;
+		color: #ffffff;
+		margin-top: 30px;
+	}
+}

@@ -1,0 +1,87 @@
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 700px;
+	background: #bcbcbc;
+	h2 {
+		display: flex;
+		padding: 10px;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 40px;
+		width: 230px;
+		text-align: center;
+		margin: 0 auto;
+		height: 50px;
+		justify-content: center;
+		background-color: #fff;
+		border-radius: 20px;
+		font-weight: bold;
+	}
+}
+
+.card {
+	position: relative;
+	width: 250px;
+	height: 400px;
+	margin: 10px;
+	overflow: hidden;
+	text-decoration: none;
+	color: black;
+	transition: transform 0.2s;
+	&-header {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	&-par {
+		font-size: 30px;
+		text-align: center;
+		font-weight: 500;
+		background-color: #fff;
+		padding: 10px;
+		border-radius: 20px;
+		a {
+			text-decoration: none;
+			color: aqua;
+		}
+	}
+}
+
+.card:hover {
+	transform: scale(1.05);
+	border-radius: 20px;
+}
+
+.card-image {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.card-label {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.card-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.card:hover .card-text {
+	opacity: 1;
+}

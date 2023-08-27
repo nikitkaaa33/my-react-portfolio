@@ -1,0 +1,77 @@
+.greeting {
+	display: flex;
+	font-family: "Courier New", Courier, monospace;
+	width: 100%;
+	height: 1000px;
+	justify-content: center;
+	text-align: center;
+	&_container {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		// position: absolute;
+		width: 1900px;
+		height: auto;
+	}
+	&_header {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		font-size: 50px;
+		margin-top: 15px;
+	}
+	&_head {
+		font-size: 60px;
+		display: flex;
+		position: relative;
+		// top: 10px;
+		width: 170px;
+		height: 100px;
+		margin: 0;
+		font-family: monospace;
+		white-space: nowrap;
+		// overflow: hidden;
+		animation: typewriter 1.5s steps(35, end) 1 forwards;
+		p {
+		}
+	}
+	&_descr-wrapper {
+		position: relative;
+		bottom: 300px;
+		p {
+			width: 1000px;
+			font-size: 30px;
+			display: flex;
+			text-align: left;
+			animation: typewriter 1.5s steps(35, end) 1 forwards;
+			font-weight: 500;
+		}
+	}
+	&_image {
+		display: flex;
+		width: 500px;
+		height: auto;
+		align-self: flex-end;
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 20px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+			position: relative;
+			right: 40px;
+			opacity: 0; /* Начальное состояние: изображение невидимо */
+			animation: fadeIn 3s forwards;
+		}
+	}
+}
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}

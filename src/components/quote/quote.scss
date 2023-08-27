@@ -1,0 +1,52 @@
+.quote-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	height: 500px;
+	width: auto;
+	text-align: center;
+	justify-content: center;
+	// background-color: rgb(164, 164, 164);
+	width: 100%;
+	height: 100%;
+	// animation: gradientAnimation 10s infinite alternate;
+	background: linear-gradient(to bottom, white, #bcbcbc);
+
+	@keyframes gradientAnimation {
+		0% {
+			background: linear-gradient(to bottom, white, grey);
+		}
+		100% {
+			background: linear-gradient(to right, grey, white);
+		}
+	}
+
+	.quote-image {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		object-fit: cover;
+		transition: opacity 0.5s;
+
+		&.fade-in {
+			opacity: 1;
+		}
+
+		&.fade-out {
+			opacity: 0;
+		}
+	}
+
+	.quote-text {
+		font-size: 30px;
+		transition: opacity 0.5s;
+
+		&.fade-in {
+			opacity: 1;
+		}
+
+		&.fade-out {
+			opacity: 0;
+		}
+	}
+}
