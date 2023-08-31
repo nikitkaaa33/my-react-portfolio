@@ -1,61 +1,22 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "./skills.scss";
-import html from "../../assets/skills/html.svg";
-import js from "../../assets/skills/js.svg";
-import css from "../../assets/skills/css.png";
-import work from "../../assets/skills/react.svg";
-import node from "../../assets/skills/node.svg";
-import npm from "../../assets/skills/npm.svg";
-import api from "../../assets/skills/api.svg";
-import express from "../../assets/skills/express.svg";
-import git from "../../assets/skills/git.svg";
-import webpack from "../../assets/skills/webpack.svg";
-import english from "../../assets/skills/english.svg";
+import { tabContents, ITabs } from "../../data/data";
 import BG from "../../assets/skillsBG.png";
 
 const Skills = () => {
-	const [activeTab, setActiveTab] = useState(1);
-	const [typedLines, setTypedLines] = useState([]);
-	const [lineIndex, setLineIndex] = useState(0);
-	const [charIndex, setCharIndex] = useState(0);
+	const [activeTab, setActiveTab] = useState<number>(1);
+	const [typedLines, setTypedLines] = useState<string[]>([]);
+	const [lineIndex, setLineIndex] = useState<number>(0);
+	const [charIndex, setCharIndex] = useState<number>(0);
 
 	// вынести обьект в отдельный файл
-	const tabContents = useMemo(
-		() => ({
-			1: [
-				{ text: "HTML5 ", image: html },
-				{
-					text: "CSS3/SASS/SCSS/LESS ",
-					image: css,
-				},
-				{
-					text: "JS ES6 + TS ",
-					image: js,
-				},
-				{ text: "React/Redux/RTK/Hooks ", image: work },
-				{ text: "Something else", image: work },
-			],
-			2: [
-				{ text: "Node.js ", image: node },
-				{ text: "Express ", image: express },
-				{ text: "NPM ", image: npm },
-				{ text: "API ", image: api },
-			],
-			3: [
-				{ text: "Git/GitHub", image: git },
-				{ text: "Gulp/WebPack", image: webpack },
-				{ text: "English B2", image: english },
-			],
-		}),
-		[]
-	);
 
 	useEffect(() => {
 		if (activeTab && lineIndex < tabContents[activeTab].length) {
 			if (charIndex < tabContents[activeTab][lineIndex].text.length) {
 				const timer = setTimeout(() => {
 					setTypedLines((prev) => {
-						const newLines = [...prev];
+						const newLines: string[] = [...prev];
 						if (newLines[lineIndex]) {
 							newLines[lineIndex] +=
 								tabContents[activeTab][lineIndex].text[
@@ -80,7 +41,7 @@ const Skills = () => {
 		}
 	}, [activeTab, lineIndex, charIndex, tabContents]);
 
-	const handleTabClick = (tabNumber) => {
+	const handleTabClick = (tabNumber: number) => {
 		setActiveTab(tabNumber);
 		setTypedLines([]);
 		setLineIndex(0);

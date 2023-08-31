@@ -1,7 +1,8 @@
 import "./greeting.scss";
 import me from "../../assets/greeting-me.jpg";
+import React from "react";
 
-const Greeting = () => {
+const Greeting: React.FC = () => {
 	return (
 		<div className="greeting">
 			<div className="greeting_container">

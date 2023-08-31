@@ -1,0 +1,31 @@
+.footer {
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+}
+
+.footer a {
+	color: #fff;
+	margin: 0 10px;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.footer a:hover {
+	color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer a {
+		display: block;
+		margin: 5px 0;
+	}
+}

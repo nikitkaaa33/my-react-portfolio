@@ -1,50 +1,13 @@
 import React, { useState } from "react";
+import { cards, ISertificates } from "../../data/data";
 import "./sertificates.scss";
 
-import jsReact from "../../assets/certifecates/js+react.png";
-import node from "../../assets/certifecates/node.png";
-import webDev from "../../assets/certifecates/webdev.jpg";
-import ts from "../../assets/certifecates/ts.png";
-import genesis from "../../assets/certifecates/genesis.png";
-import prmWeb from "../../assets/certifecates/prmWeb.png";
+const CardGrid: React.FC = () => {
+	const [selectedCard, setSelectedCard] = useState<ISertificates | null>(
+		null
+	);
 
-const cards = [
-	{
-		name: "Card 1",
-		image: jsReact,
-		description: "Description for Card 1",
-	},
-	{
-		name: "Card 2",
-		image: node,
-		description: "Description for Card 2",
-	},
-	{
-		name: "Card 3",
-		image: webDev,
-		description: "Description for Card 3",
-	},
-	{
-		name: "Card 4",
-		image: ts,
-		description: "Description for Card 4",
-	},
-	{
-		name: "Card 5",
-		image: genesis,
-		description: "Description for Card 5",
-	},
-	{
-		name: "Card 6",
-		image: prmWeb,
-		description: "Description for Card 6",
-	},
-];
-
-const CardGrid = () => {
-	const [selectedCard, setSelectedCard] = useState(null);
-
-	const handleCardClick = (card) => {
+	const handleCardClick = (card: ISertificates) => {
 		setSelectedCard(card);
 	};
 
