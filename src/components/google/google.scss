@@ -1,4 +1,4 @@
-.google-form {
+.google {
 	display: flex;
 	justify-content: space-around;
 	background: white;
@@ -22,5 +22,29 @@
 		font-weight: bold;
 		color: #ffffff;
 		margin-top: 30px;
+	}
+}
+
+.google-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	img {
+		width: 90px;
+		height: auto;
+		margin-top: 20px;
+	}
+	&-descr {
+		text-align: center;
+		color: #000000;
+		font-size: 25px;
+	}
+	&-wrapper {
+		text-align: center;
+		text-decoration: none;
+	}
+	:hover {
+		color: #6f6f6f;
+		transition: all 0.5s;
 	}
 }

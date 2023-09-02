@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./quote.scss";
 import { quotes } from "../../data/data";
-import { Node } from "typescript";
-
 const Quote: React.FC = () => {
 	const [quoteIndex, setQuoteIndex] = useState<number>(0);
 	const [fade, setFade] = useState<boolean>(true);
