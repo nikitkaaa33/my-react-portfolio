@@ -1,13 +1,19 @@
 import React, { useEffect, useRef } from "react";
+interface Point {
+	x: number;
+	y: number;
+}
+
+//dont know how to typified component
 
 const StarBackground = () => {
-	const canvasRef = useRef(null);
+	const canvasRef = useRef<HTMLCanvasElement>(null);
 
 	useEffect(() => {
-		const canvas = canvasRef.current;
-		const ctx = canvas.getContext("2d");
+		const canvas: HTMLCanvasElement | any = canvasRef.current;
+		const ctx: CanvasRenderingContext2D | any = canvas.getContext("2d");
 
-		let points = [];
+		let points: Point[] = [];
 		const maxDistance = 100;
 		const pointCount = 100;
 
@@ -29,7 +35,7 @@ const StarBackground = () => {
 			}
 		};
 
-		const handleMouseMove = (e) => {
+		const handleMouseMove = (e: React.MouseEvent) => {
 			const mouseX = e.clientX;
 			const mouseY = e.clientY;
 

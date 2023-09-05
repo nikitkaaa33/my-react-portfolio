@@ -1,6 +1,9 @@
-import { useMemo } from "react";
 import gates from "../assets/quotes/gates.jpg";
-import Employee from "../assets/employee.png";
+import linus from "../assets/quotes/linus.jpg";
+import jobs from "../assets/quotes/jobs.jpg";
+import mark from "../assets/quotes/mark.jpg";
+import hopper from "../assets/quotes/hopper.jpg";
+import employee from "../assets/employee.png";
 import marvel from "../assets/marvel1.png";
 import heroes from "../assets/Heroes.png";
 import smth from "../assets/films.png";
@@ -71,7 +74,7 @@ export interface ICardsData {
 }
 export const cardsData: ICardsData[] = [
 	{
-		image: Employee,
+		image: employee,
 		label: "CRUD",
 		text: "Some description for card 1 lorem  ",
 		link: "https://example1.com",
@@ -110,22 +113,22 @@ export const quotes: IQuote[] = [
 	{
 		author: "Mark Zuckerberg",
 		text: "The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks.",
-		image: gates,
+		image: mark,
 	},
 	{
 		author: "Steve Jobs",
 		text: "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
-		image: gates,
+		image: jobs,
 	},
 	{
 		author: "Grace Hopper",
 		text: "The most dangerous phrase in the language is, 'We've always done it this way.'",
-		image: gates,
+		image: hopper,
 	},
 	{
 		author: "Linus Torvalds",
 		text: "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
-		image: gates,
+		image: linus,
 	},
 ];
 
