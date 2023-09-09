@@ -48,3 +48,54 @@
 		transition: all 0.5s;
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.google {
+		width: 768px;
+		padding: 10px;
+		flex-direction: column;
+		h2 {
+			margin: 0 auto;
+			margin-bottom: 25px;
+		}
+		iframe {
+			height: 600px;
+		}
+	}
+}
+
+@media screen and (min-width: 533px) and (max-width: 767px) {
+	.google {
+		display: block;
+		h2 {
+			margin: 0 auto;
+			font-size: 25px;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		iframe {
+			height: 600px;
+			width: auto;
+			width: 533px;
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.google {
+		display: block;
+		padding: 5px;
+		h2 {
+			margin: 0 auto;
+			font-size: 20px;
+			height: auto;
+			width: 300px;
+			margin-bottom: 20px;
+		}
+		iframe {
+			height: 600px;
+			width: auto;
+			width: 360px;
+		}
+	}
+}

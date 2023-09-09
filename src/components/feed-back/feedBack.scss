@@ -1,0 +1,35 @@
+.feedBack {
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	height: auto;
+	margin-top: 50px;
+	&_item {
+		p {
+			text-align: center;
+			font-size: 30px;
+			font-family: "Courier New", Courier, monospace;
+			font-weight: 600;
+			a {
+				text-decoration: dotted;
+				color: rgb(142, 142, 142);
+				animation: pulse 2s infinite;
+			}
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+}

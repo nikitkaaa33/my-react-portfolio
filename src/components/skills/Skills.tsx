@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./skills.scss";
 import { tabContents, ITabs } from "../../data/data";
 import BG from "../../assets/skillsBG.png";
@@ -8,8 +8,24 @@ const Skills = () => {
 	const [typedLines, setTypedLines] = useState<string[]>([]);
 	const [lineIndex, setLineIndex] = useState<number>(0);
 	const [charIndex, setCharIndex] = useState<number>(0);
+	const [isVisible, setIsVisible] = useState<boolean>(false);
+	const domRef = useRef<HTMLDivElement | null>(null);
 
-	// вынести обьект в отдельный файл
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => setIsVisible(entry.isIntersecting));
+		});
+
+		if (domRef.current) {
+			observer.observe(domRef.current);
+		}
+
+		return () => {
+			if (domRef.current) {
+				observer.unobserve(domRef.current);
+			}
+		};
+	}, []);
 
 	useEffect(() => {
 		if (activeTab && lineIndex < tabContents[activeTab].length) {
@@ -49,30 +65,32 @@ const Skills = () => {
 	};
 
 	return (
-		<div className="tabs-container">
-			<header className="tabs-header">My Skills</header>
+		<div className={`fade-in ${isVisible ? "visible" : ""}`} ref={domRef}>
+			<div className="tabs-container">
+				<header className="tabs-header">My Skills</header>
 
-			<div className="tabs-buttons">
-				<button onClick={() => handleTabClick(1)}>Front-end</button>
-				<button onClick={() => handleTabClick(2)}>Back-end</button>
-				<button onClick={() => handleTabClick(3)}>Others</button>
-			</div>
+				<div className="tabs-buttons">
+					<button onClick={() => handleTabClick(1)}>Front-end</button>
+					<button onClick={() => handleTabClick(2)}>Back-end</button>
+					<button onClick={() => handleTabClick(3)}>Others</button>
+				</div>
 
-			<div className="tabs-content">
-				{/* <div className="tabs-content_img">
+				<div className="tabs-content">
+					{/* <div className="tabs-content_img">
 					{" "}
 					<img src={BG} alt="" />
 				</div> */}
-				{tabContents[activeTab]?.map((item, index) => (
-					<div key={index} className="tab-content-item">
-						<img
-							src={item.image}
-							alt="Description"
-							className="tab-image"
-						/>
-						<span>{typedLines[index] || ""}</span>
-					</div>
-				))}
+					{tabContents[activeTab]?.map((item, index) => (
+						<div key={index} className="tab-content-item">
+							<img
+								src={item.image}
+								alt="Description"
+								className="tab-image"
+							/>
+							<span>{typedLines[index] || ""}</span>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);

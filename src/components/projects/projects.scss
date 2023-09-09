@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	height: 700px;
+	height: auto;
 	background: #bcbcbc;
 	h2 {
 		display: flex;
@@ -42,6 +42,7 @@
 		background-color: #fff;
 		padding: 10px;
 		border-radius: 20px;
+		animation: pulse 2s infinite;
 		a {
 			text-decoration: none;
 			color: aqua;
@@ -84,4 +85,59 @@
 
 .card:hover .card-text {
 	opacity: 1;
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.card-container {
+		h2 {
+			font-size: 30px;
+			height: auto;
+		}
+	}
+	.card {
+		position: relative;
+		width: 250px;
+		height: 400px;
+		margin: 10px;
+		overflow: hidden;
+		text-decoration: none;
+		color: black;
+		transition: transform 0.2s;
+		&-header {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+		&-par {
+			font-size: 20px;
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	visibility: hidden;
+	transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible;
 }

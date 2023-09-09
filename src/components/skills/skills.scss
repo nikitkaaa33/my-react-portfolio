@@ -1,7 +1,8 @@
 .tabs-container {
 	display: flex;
 	flex-direction: column;
-	height: 1000px;
+	height: auto;
+	width: auto;
 }
 
 .tabs-header {
@@ -74,4 +75,48 @@
 			margin-right: 10px;
 		}
 	}
+}
+
+@media screen and (min-width: 533px) and (max-width: 767px) {
+	.tabs-header {
+		font-size: 25px;
+		width: 150px;
+		margin-top: 25px;
+	}
+	.tabs-buttons {
+		button {
+			font-size: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.tabs-header {
+		font-size: 25px;
+		width: 150px;
+		margin-top: 25px;
+	}
+	.tabs-buttons {
+		button {
+			font-size: 20px;
+		}
+	}
+	.tab-content-item {
+		span {
+			font-size: 25px;
+		}
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	visibility: hidden;
+	transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible;
 }

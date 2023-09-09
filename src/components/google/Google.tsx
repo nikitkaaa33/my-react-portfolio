@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
 			<iframe
 				src="https://docs.google.com/forms/d/e/1FAIpQLSfzc7uboCQRbqV89esJ_hLqLeO7Urhq5ncQHYOo8xFOqA-INw/viewform?embedded=true"
 				width="800"
-				height="700"
+				height="auto"
 				frameBorder="0"
 			>
 				Загрузка…

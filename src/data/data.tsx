@@ -3,7 +3,7 @@ import linus from "../assets/quotes/linus.jpg";
 import jobs from "../assets/quotes/jobs.jpg";
 import mark from "../assets/quotes/mark.jpg";
 import hopper from "../assets/quotes/hopper.jpg";
-import employee from "../assets/employee.png";
+import employee from "../assets/Heroes.png";
 import marvel from "../assets/marvel1.png";
 import heroes from "../assets/Heroes.png";
 import smth from "../assets/films.png";
@@ -11,7 +11,6 @@ import smth from "../assets/films.png";
 import jsReact from "../assets/certifecates/js+react.png";
 import node from "../assets/certifecates/node.png";
 import webDev from "../assets/certifecates/webdev.jpg";
-import ts from "../assets/certifecates/ts.png";
 import genesis from "../assets/certifecates/genesis.png";
 import prmWeb from "../assets/certifecates/prmWeb.png";
 
@@ -26,6 +25,7 @@ import express from "../assets/skills/express.svg";
 import git from "../assets/skills/git.svg";
 import webpack from "../assets/skills/webpack.svg";
 import english from "../assets/skills/english.svg";
+import ts from "../assets/skills/ts.svg";
 
 export interface ISertificates {
 	name: string;
@@ -35,32 +35,36 @@ export interface ISertificates {
 
 export const cards: ISertificates[] = [
 	{
-		name: "Card 1",
+		name: "JS+React",
 		image: jsReact,
-		description: "Description for Card 1",
+		description:
+			"Basics of programming and algorithms, basics of object-oriented programming, basic concepts and principles of JavaScript, AJAX, JSON, npm, Babel, Browserify, Webpack, Heroku, Firebase,Redux",
 	},
 	{
-		name: "Card 2",
+		name: "Node.js",
 		image: node,
-		description: "Description for Card 2",
+		description:
+			"Node.js Architecture, Event Loop, Thread Pool, Libuv, Built-in Modules, Express.js, Middleware Functions, Asynchronous Programming with Callbacks, Promises and async/await, NPM, Package.json",
 	},
 	{
-		name: "Card 3",
+		name: "Web",
 		image: webDev,
-		description: "Description for Card 3",
+		description:
+			"Photoshop, Zeplin, Figma, Avocode, HTML5 and CSS3, JS and Jquery, Git and GitHub, Bootstrap 4/5, CSS Grid, Sass/Scss/Less, mobile adaptation",
 	},
 	{
-		name: "Card 4",
+		name: "TypeScript",
 		image: ts,
-		description: "Description for Card 4",
+		description:
+			"Basic concepts and principles of TypeScript, interfaces, enum, types",
 	},
 	{
-		name: "Card 5",
+		name: "Practise",
 		image: genesis,
 		description: "Description for Card 5",
 	},
 	{
-		name: "Card 6",
+		name: "Started courses",
 		image: prmWeb,
 		description: "Description for Card 6",
 	},
@@ -75,25 +79,25 @@ export interface ICardsData {
 export const cardsData: ICardsData[] = [
 	{
 		image: employee,
-		label: "CRUD",
+		label: "CRUD app",
 		text: "Some description for card 1 lorem  ",
 		link: "https://example1.com",
 	},
 	{
 		image: marvel,
-		label: "Label 2",
-		text: "Some description for card 2",
+		label: "Marvel Database",
+		text: "My biggest project with using many tools",
 		link: "https://example2.com",
 	},
 	{
 		image: heroes,
-		label: "Label 2",
+		label: "CRUD app with db",
 		text: "Some description for card 2",
 		link: "https://example2.com",
 	},
 	{
 		image: smth,
-		label: "Label 2",
+		label: "IDK ",
 		text: "Some description for card 2",
 		link: "https://example2.com",
 	},
@@ -153,7 +157,7 @@ export const tabContents: ITabs = {
 			image: js,
 		},
 		{ text: "React/Redux/RTK/Hooks ", image: work },
-		{ text: "Something else", image: work },
+		{ text: "TypeScript", image: ts },
 	],
 	2: [
 		{ text: "Node.js ", image: nodeSvg },

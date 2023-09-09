@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 
 .greeting {
+	margin-top: 100px;
 	display: flex;
 	font-family: "Courier New", Courier, monospace;
 	width: 100%;
@@ -60,7 +61,7 @@
 			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 			position: relative;
 			right: 40px;
-			opacity: 0; /* Начальное состояние: изображение невидимо */
+			opacity: 0;
 			animation: fadeIn 3s forwards;
 		}
 	}
@@ -77,9 +78,10 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 	.greeting {
-		max-width: 768px;
+		max-width: 750px;
+		height: 800px;
 		&_header {
 			font-size: 30px;
 		}
@@ -92,6 +94,66 @@
 		&_descr-wrapper {
 			width: 300px;
 			margin-bottom: 30px;
+			bottom: 450px;
+			p {
+				font-size: 20px;
+				width: auto;
+			}
+		}
+	}
+}
+@media screen and (min-width: 533px) and (max-width: 767px) {
+	.greeting {
+		width: auto;
+		height: auto;
+		margin-top: 40px;
+		&_header {
+			font-size: 25px;
+		}
+		&_head {
+			font-size: 30px;
+		}
+		&_image {
+			width: 300px;
+			margin: 0 auto;
+			margin-right: 50px;
+		}
+		&_descr-wrapper {
+			width: 300px;
+			margin-bottom: 30px;
+			top: 50px;
+			width: auto;
+			p {
+				font-size: 20px;
+				width: auto;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.greeting {
+		width: auto;
+		height: auto;
+		margin-top: 50px;
+		&_header {
+			font-size: 25px;
+		}
+		&_head {
+			font-size: 30px;
+		}
+		&_image {
+			width: 300px;
+			margin: 0 auto;
+			img {
+				right: 0;
+			}
+		}
+		&_descr-wrapper {
+			width: 300px;
+			margin-bottom: 30px;
+			top: 50px;
+			width: auto;
 			p {
 				font-size: 20px;
 				width: auto;

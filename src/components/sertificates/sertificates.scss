@@ -12,10 +12,10 @@
 	border-radius: 20px;
 	font-weight: bold;
 	color: #ffffff;
-	// margin-top: 30px;
 }
 .certifications {
 	background: linear-gradient(to bottom, #bcbcbc, white);
+	padding-top: 40px;
 }
 .card-grid {
 	display: grid;
@@ -119,6 +119,71 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+		}
+	}
+}
+.codewars {
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 533px) and (max-width: 767px) {
+	.sertifications {
+		padding-top: 15px;
+		width: auto;
+		height: auto;
+	}
+	.sertification-header {
+		font-size: 30px;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.card-grid {
+		position: relative;
+		overflow: hidden;
+		// width: 300px;
+		.card {
+			.card-image {
+				width: 360px;
+				height: auto;
+				width: 360px;
+				height: auto;
+				object-fit: scale-down;
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+	}
+	.modal-overlay {
+		.modal {
+			position: relative;
+			max-width: 90%;
+			max-height: 90%;
+			overflow: auto;
+
+			.modal-image {
+				max-width: 360px;
+				max-height: auto;
+				display: block;
+				margin: auto;
+				left: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 533px) {
+	.sertification-header {
+		font-size: 35px;
+		height: auto;
+		width: 300px;
+	}
+	.codewars {
+		width: 350px;
+
+		img {
+			width: 300px;
 		}
 	}
 }

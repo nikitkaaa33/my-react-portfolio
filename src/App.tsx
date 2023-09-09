@@ -8,15 +8,19 @@ import Skills from "./components/skills/Skills";
 import Google from "./components/google/Google";
 import Quotes from "./components/quote/Quote";
 import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import FeedBack from "./components/feed-back/FeedBack";
 
 function App() {
 	return (
 		<div className="App">
+			<Header />
 			{/* <StarBackground /> */}
 			<Greeting />
 			<Skills />
 			<Projects />
 			<Sertificates />
+			<FeedBack />
 			<Google />
 			<Quotes />
 			<Footer />
