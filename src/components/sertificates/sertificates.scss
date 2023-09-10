@@ -42,18 +42,14 @@
 
 		.card-name {
 			padding: 10px;
-			background-color: rgba(0, 0, 0, 0.7);
+			background-color: rgba(0, 0, 0, 0.3);
 			color: white;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
-			transform: translateY(100%);
 			transition: transform 0.3s;
-
-			&:hover {
-				transform: translateY(0);
-			}
+			bottom: 14px;
 		}
 
 		.card-description {
@@ -136,14 +132,33 @@
 		font-size: 30px;
 		height: auto;
 	}
+	.modal-overlay {
+		display: none;
+	}
+	.modal {
+		display: none;
+	}
 }
 
-@media screen and (min-width: 360px) and (max-width: 533px) {
+@media screen and (max-width: 533px) {
 	.card-grid {
 		position: relative;
 		overflow: hidden;
-		// width: 300px;
+		width: 400px;
+		margin-right: 0;
+		justify-content: start;
+		margin: 0 auto;
+		margin-top: 30px;
 		.card {
+			// width: 360px;
+			height: auto;
+			margin: 0 auto;
+			.card-name {
+				bottom: 0;
+				width: 360px;
+				padding: 0;
+				left: 10px;
+			}
 			.card-image {
 				width: 360px;
 				height: auto;
@@ -153,27 +168,20 @@
 				margin-right: 0;
 				margin-left: 10px;
 			}
-		}
-	}
-	.modal-overlay {
-		.modal {
-			position: relative;
-			max-width: 90%;
-			max-height: 90%;
-			overflow: auto;
-
-			.modal-image {
-				max-width: 360px;
-				max-height: auto;
-				display: block;
-				margin: auto;
-				left: 0;
+			.card-description {
+				width: 400px;
 			}
 		}
 	}
+	.modal-overlay {
+		display: none;
+	}
+	.modal {
+		display: none;
+	}
 }
 
-@media screen and (min-width: 360px) and (max-width: 533px) {
+@media screen and (max-width: 533px) {
 	.sertification-header {
 		font-size: 35px;
 		height: auto;
@@ -183,7 +191,7 @@
 		width: 350px;
 
 		img {
-			width: 300px;
+			width: 400px;
 		}
 	}
 }

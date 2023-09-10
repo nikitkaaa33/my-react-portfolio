@@ -13,6 +13,7 @@ import node from "../assets/certifecates/node.png";
 import webDev from "../assets/certifecates/webdev.jpg";
 import genesis from "../assets/certifecates/genesis.png";
 import prmWeb from "../assets/certifecates/prmWeb.png";
+import tsSer from "../assets/certifecates/ts.png";
 
 import html from "../assets/skills/html.svg";
 import js from "../assets/skills/js.svg";
@@ -54,7 +55,7 @@ export const cards: ISertificates[] = [
 	},
 	{
 		name: "TypeScript",
-		image: ts,
+		image: tsSer,
 		description:
 			"Basic concepts and principles of TypeScript, interfaces, enum, types",
 	},

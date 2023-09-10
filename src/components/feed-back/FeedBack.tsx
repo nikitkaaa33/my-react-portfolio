@@ -6,12 +6,9 @@ import upWork from "../../assets/feedBack/upwork.png";
 const FeedBack: React.FC = () => {
 	return (
 		<div className="feedBack">
-			<h2 className="feedBack_header">
-				My rewies <br />
-				from customers
-			</h2>
+			<h2 className="feedBack_header">My rewies from customers</h2>
 			<div className="feedBack_item">
-				<img src={upWork} alt="" />
+				<img src={upWork} alt="client feedback" />
 				<p>
 					Visit my{" "}
 					<a href="https://www.upwork.com/freelancers/~0150a3d79482a90183">
@@ -20,7 +17,7 @@ const FeedBack: React.FC = () => {
 				</p>
 			</div>
 			<div className="feedBack_item">
-				<img src={fiver} alt="" />
+				<img src={fiver} alt="client feedback" />
 				<p>
 					Visit my{" "}
 					<a href="https://www.fiverr.com/nikitkaaa33?up_rollout=true">

@@ -77,6 +77,53 @@
 		opacity: 1;
 	}
 }
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+	.greeting {
+		width: auto;
+		height: 800px;
+		&_header {
+			font-size: 40px;
+		}
+		&_image {
+			width: 450px;
+			img {
+			}
+		}
+		&_descr-wrapper {
+			width: 700px;
+			margin-bottom: 30px;
+			bottom: 500px;
+			p {
+				font-size: 35px;
+				width: auto;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.greeting {
+		width: auto;
+		height: 800px;
+		&_header {
+			font-size: 30px;
+		}
+		&_image {
+			width: 400px;
+			img {
+				left: 20px;
+			}
+		}
+		&_descr-wrapper {
+			width: 600px;
+			margin-bottom: 30px;
+			bottom: 450px;
+			p {
+				font-size: 22px;
+				width: auto;
+			}
+		}
+	}
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.greeting {
