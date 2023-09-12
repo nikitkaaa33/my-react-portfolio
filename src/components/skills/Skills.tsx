@@ -76,10 +76,6 @@ const Skills = () => {
 				</div>
 
 				<div className="tabs-content">
-					{/* <div className="tabs-content_img">
-					{" "}
-					<img src={BG} alt="" />
-				</div> */}
 					{tabContents[activeTab]?.map((item, index) => (
 						<div key={index} className="tab-content-item">
 							<img

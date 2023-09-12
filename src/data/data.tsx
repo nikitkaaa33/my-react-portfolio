@@ -3,10 +3,11 @@ import linus from "../assets/quotes/linus.jpg";
 import jobs from "../assets/quotes/jobs.jpg";
 import mark from "../assets/quotes/mark.jpg";
 import hopper from "../assets/quotes/hopper.jpg";
-import employee from "../assets/Heroes.png";
-import marvel from "../assets/marvel1.png";
-import heroes from "../assets/Heroes.png";
-import smth from "../assets/films.png";
+import employee from "../assets/projects/employee.png";
+import marvel from "../assets/projects/marvel1.png";
+import gta2 from "../assets/projects/gta2.png";
+import pulse from "../assets/projects/pulse.png";
+import form from "../assets/projects/form.png";
 
 import jsReact from "../assets/certifecates/js+react.png";
 import node from "../assets/certifecates/node.png";
@@ -82,7 +83,7 @@ export const cardsData: ICardsData[] = [
 		image: employee,
 		label: "CRUD app",
 		text: "Some description for card 1 lorem  ",
-		link: "https://example1.com",
+		link: "https://employee-app-zeta.vercel.app/",
 	},
 	{
 		image: marvel,
@@ -91,16 +92,22 @@ export const cardsData: ICardsData[] = [
 		link: "https://example2.com",
 	},
 	{
-		image: heroes,
-		label: "CRUD app with db",
-		text: "Some description for card 2",
-		link: "https://example2.com",
+		image: gta2,
+		label: "Game GTA2",
+		text: "Maded simple game like gta2",
+		link: "https://gta2-ivory.vercel.app/",
 	},
 	{
-		image: smth,
-		label: "IDK ",
+		image: pulse,
+		label: "Pulse ",
 		text: "Some description for card 2",
-		link: "https://example2.com",
+		link: "https://pulse-n9na.vercel.app/",
+	},
+	{
+		image: form,
+		label: "Form",
+		text: "Some description for card 2",
+		link: "https://react-formik-eight.vercel.app/",
 	},
 ];
 

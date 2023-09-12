@@ -3,14 +3,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 40px;
+	padding: 20px 10px;
 	background-color: #333;
 	color: #fff;
 	height: 50px;
 	// position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10;
 
 	&__logo {
 		font-size: 24px;
@@ -26,6 +25,7 @@
 			display: flex;
 			color: #fff;
 			transition: color 0.3s;
+			margin-right: 30px;
 			img {
 				width: 50px;
 			}

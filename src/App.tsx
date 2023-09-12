@@ -11,15 +11,13 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import FeedBack from "./components/feed-back/FeedBack";
 import PulsatingImages from "./components/pulsatingImages/PulsatingImages";
-import teleram from "./assets/social/telegram.svg";
-import phone from "./assets/social/phone.svg";
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
 			<Background />
-			<PulsatingImages imgSrc1={teleram} imgSrc2={phone} />
+			<PulsatingImages />
 			<Greeting />
 			<Skills />
 			<Projects />
