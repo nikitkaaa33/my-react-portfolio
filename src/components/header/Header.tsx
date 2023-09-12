@@ -21,10 +21,6 @@ const Header: React.FC = () => {
 					<img src={phone} alt="" />
 					<p>+38(095)590-20-87</p>
 				</div>
-				<div className="header__nav-item">
-					<img src="" alt="" />
-					<p></p>
-				</div>
 			</nav>
 		</div>
 	);

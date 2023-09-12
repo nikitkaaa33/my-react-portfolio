@@ -74,7 +74,7 @@ const InteractiveBackground: React.FC = () => {
 
 					if (distance < 100) {
 						ctx.strokeStyle = "white";
-						ctx.lineWidth = 0.2;
+						ctx.lineWidth = 0.5;
 						ctx.beginPath();
 						ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
 						ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
