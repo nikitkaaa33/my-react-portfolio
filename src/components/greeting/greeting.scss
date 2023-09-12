@@ -1,13 +1,17 @@
 @import "../../styles/variables.scss";
 
 .greeting {
-	margin-top: 100px;
 	display: flex;
 	font-family: "Courier New", Courier, monospace;
 	width: 100%;
 	height: 1000px;
 	justify-content: center;
 	text-align: center;
+	&_wrapper-me {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 40px;
+	}
 	&_container {
 		padding: 20px;
 		display: flex;
@@ -22,30 +26,46 @@
 		font-size: 50px;
 		margin-top: 15px;
 	}
+	h1 {
+		position: relative;
+	}
+
+	h1::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #000000;
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	h1:hover::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
 	&_head {
 		font-size: 60px;
+		font-family: "Courier New", Courier, monospace;
 		display: flex;
 		position: relative;
 		// top: 10px;
 		width: 170px;
 		height: 100px;
 		margin: 0;
-		font-family: monospace;
-		white-space: nowrap;
-		// overflow: hidden;
-		animation: typewriter 1.5s steps(35, end) 1 forwards;
 		p {
 		}
 	}
 	&_descr-wrapper {
 		position: relative;
-		bottom: 300px;
 		p {
 			width: 1000px;
 			font-size: 30px;
 			display: flex;
-			text-align: left;
-			animation: typewriter 1.5s steps(35, end) 1 forwards;
+			display: block;
 			font-weight: 500;
 		}
 	}
@@ -58,17 +78,11 @@
 			width: 100%;
 			height: auto;
 			border-radius: 20px;
-			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 			position: relative;
-			right: 40px;
 			opacity: 0;
 			animation: fadeIn 3s forwards;
 		}
-	}
-}
-@keyframes typewriter {
-	from {
-		width: 0;
 	}
 }
 
@@ -77,10 +91,12 @@
 		opacity: 1;
 	}
 }
+
 @media screen and (min-width: 1280px) and (max-width: 1680px) {
 	.greeting {
 		width: auto;
-		height: 800px;
+		height: auto;
+		margin-bottom: 20px;
 		&_header {
 			font-size: 40px;
 		}
@@ -92,7 +108,6 @@
 		&_descr-wrapper {
 			width: 700px;
 			margin-bottom: 30px;
-			bottom: 500px;
 			p {
 				font-size: 35px;
 				width: auto;
@@ -100,10 +115,10 @@
 		}
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
 	.greeting {
 		width: auto;
-		height: 800px;
+		height: auto;
 		&_header {
 			font-size: 30px;
 		}
@@ -116,7 +131,6 @@
 		&_descr-wrapper {
 			width: 600px;
 			margin-bottom: 30px;
-			bottom: 450px;
 			p {
 				font-size: 22px;
 				width: auto;
@@ -125,10 +139,10 @@
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
 	.greeting {
-		max-width: 750px;
-		height: 800px;
+		max-width: auto;
+		height: auto;
 		&_header {
 			font-size: 30px;
 		}
@@ -141,7 +155,6 @@
 		&_descr-wrapper {
 			width: 300px;
 			margin-bottom: 30px;
-			bottom: 450px;
 			p {
 				font-size: 20px;
 				width: auto;
@@ -153,25 +166,27 @@
 	.greeting {
 		width: auto;
 		height: auto;
-		margin-top: 40px;
 		&_header {
 			font-size: 25px;
 		}
 		&_head {
 			font-size: 30px;
+			margin-left: 10px;
 		}
 		&_image {
 			width: 300px;
 			margin: 0 auto;
-			margin-right: 50px;
+			img {
+				left: 0;
+			}
 		}
 		&_descr-wrapper {
-			width: 300px;
+			width: 250px;
 			margin-bottom: 30px;
-			top: 50px;
-			width: auto;
+
+			// width: auto;
 			p {
-				font-size: 20px;
+				font-size: 17px;
 				width: auto;
 			}
 		}
@@ -182,7 +197,6 @@
 	.greeting {
 		width: auto;
 		height: auto;
-		margin-top: 50px;
 		&_header {
 			font-size: 25px;
 		}
@@ -193,14 +207,21 @@
 			width: 300px;
 			margin: 0 auto;
 			img {
-				right: 0;
+				// right: 0;
+				left: 0;
 			}
+		}
+		&_wrapper-me {
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			margin: 0 auto;
 		}
 		&_descr-wrapper {
 			width: 300px;
 			margin-bottom: 30px;
 			top: 50px;
-			width: auto;
+			margin: 0 auto;
 			p {
 				font-size: 20px;
 				width: auto;

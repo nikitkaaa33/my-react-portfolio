@@ -12,9 +12,10 @@
 	border-radius: 20px;
 	font-weight: bold;
 	color: #ffffff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .certifications {
-	background: linear-gradient(to bottom, #bcbcbc, white);
+	background: white;
 	padding-top: 40px;
 }
 .card-grid {
@@ -167,6 +168,8 @@
 				object-fit: scale-down;
 				margin-right: 0;
 				margin-left: 10px;
+				// border-radius: 20px;
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 			}
 			.card-description {
 				width: 400px;

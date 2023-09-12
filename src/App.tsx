@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Greeting from "./components/greeting/Greeting";
-// import StarBackground from "./components/animated-background/StarBackground";
+import Background from "./components/animated-background/Background";
 import Projects from "./components/projects/Projects";
 import Sertificates from "./components/sertificates/Sertificates";
 import Skills from "./components/skills/Skills";
@@ -15,7 +15,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			{/* <StarBackground /> */}
+			<Background />
 			<Greeting />
 			<Skills />
 			<Projects />
