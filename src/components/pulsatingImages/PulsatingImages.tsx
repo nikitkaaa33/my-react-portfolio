@@ -6,13 +6,9 @@ import "./pulsatingImages.scss";
 const PulsatingImages: React.FC = () => {
 	return (
 		<div className="pulsating-images">
-			<a href="">
-				<img src={telegram} />
+			<a href="https://t.me/nikitkaaa33">
+				<img src={telegram} alt="telergam" />
 				<p>Telegram</p>
-			</a>
-			<a href="" className="">
-				<img src={phone} />
-				<p>Phone</p>
 			</a>
 		</div>
 	);

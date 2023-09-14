@@ -57,7 +57,10 @@ const Footer: React.FC = () => {
 							nikita.vaskovskyit@gmail.com
 						</p>
 					</a>
-					<a className="google-link-wrapper" href="">
+					<a
+						className="google-link-wrapper"
+						href="https://t.me/nikitkaaa33"
+					>
 						<img src={telegram} alt="telegram" />
 						<p className="google-link-descr">My Telegram</p>
 					</a>

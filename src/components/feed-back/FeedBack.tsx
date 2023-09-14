@@ -25,7 +25,7 @@ const FeedBack: React.FC = () => {
 	return (
 		<div className={`fade-in ${isVisible ? "visible" : ""}`} ref={domRef}>
 			<div className="feedBack">
-				<h2 className="feedBack_header">My rewies from customers</h2>
+				<h2 className="feedBack_header2">My rewies from customers</h2>
 				<div className="feedBack_item">
 					<img src={upWork} alt="client feedback" />
 					<p>

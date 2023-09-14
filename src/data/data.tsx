@@ -63,12 +63,12 @@ export const cards: ISertificates[] = [
 	{
 		name: "Practise",
 		image: genesis,
-		description: "Description for Card 5",
+		description: "Practise of working in team",
 	},
 	{
 		name: "Started courses",
 		image: prmWeb,
-		description: "Description for Card 6",
+		description: "Basic concepts of web development and programming",
 	},
 ];
 
@@ -82,31 +82,31 @@ export const cardsData: ICardsData[] = [
 	{
 		image: employee,
 		label: "CRUD app",
-		text: "Some description for card 1 lorem  ",
+		text: "Tap to open this app",
 		link: "https://employee-app-zeta.vercel.app/",
 	},
 	{
 		image: marvel,
 		label: "Marvel Database",
-		text: "My biggest project with using many tools",
-		link: "https://example2.com",
+		text: "My biggest project with using many tools, tap to open this app",
+		link: "https://marvel-starter-nnjc-f0ool1smu-nikitkaaa33.vercel.app/",
 	},
 	{
 		image: gta2,
 		label: "Game GTA2",
-		text: "Maded simple game like gta2",
+		text: "Maded simple game like gta2 using js, tap to open this app",
 		link: "https://gta2-ivory.vercel.app/",
 	},
 	{
 		image: pulse,
 		label: "Pulse ",
-		text: "Some description for card 2",
+		text: "HTML CSS JS, tap to open this site",
 		link: "https://pulse-n9na.vercel.app/",
 	},
 	{
 		image: form,
 		label: "Form",
-		text: "Some description for card 2",
+		text: "React Formik with validation schema , tap to open this app",
 		link: "https://react-formik-eight.vercel.app/",
 	},
 ];
@@ -171,7 +171,7 @@ export const tabContents: ITabs = {
 		{ text: "Node.js ", image: nodeSvg },
 		{ text: "Express ", image: express },
 		{ text: "NPM ", image: npm },
-		{ text: "API ", image: api },
+		{ text: "API, AJAX, JSON", image: api },
 	],
 	3: [
 		{ text: "Git/GitHub", image: git },
