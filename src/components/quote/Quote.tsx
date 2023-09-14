@@ -23,11 +23,11 @@ const Quote: React.FC = () => {
 
 	return (
 		<div className="quote-container">
-			<img
+			{/* <img
 				src={quotes[quoteIndex].image}
 				alt={quotes[quoteIndex].author}
 				className={`quote-image ${fade ? "fade-in2" : "fade-out2"}`}
-			/>
+			/> */}
 			<div className={`quote-text ${fade ? "fade-in2" : "fade-out2"}`}>
 				"{quotes[quoteIndex].text}" - {quotes[quoteIndex].author}
 			</div>

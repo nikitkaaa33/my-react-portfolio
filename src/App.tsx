@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Greeting from "./components/greeting/Greeting";
 import Background from "./components/animated-background/Background";
+import Particles from "./components/particles/Particles";
 import Projects from "./components/projects/Projects";
 import Sertificates from "./components/sertificates/Sertificates";
 import Skills from "./components/skills/Skills";
@@ -16,7 +17,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Background />
+			<Particles />
 			<PulsatingImages />
 			<Greeting />
 			<Skills />
