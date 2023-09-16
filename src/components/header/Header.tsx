@@ -9,14 +9,22 @@ const Header: React.FC = () => {
 		<div className="header">
 			<div className="header__logo">Nikita Vaskovskyi. Portfolio</div>
 			<nav className="header__nav">
-				<div className="header__nav-item">
+				<a
+					className="header__nav-item"
+					href="mailto:nikita.vaskovskyit@gmail.com"
+					target="_blank"
+				>
 					<img src={email} alt="email" />
 					<p>nikita.vaskovskyit@gmail.com</p>
-				</div>
-				<div className="header__nav-item">
+				</a>
+				<a
+					className="header__nav-item"
+					href="https://t.me/nikitkaaa33"
+					target="_blank"
+				>
 					<img src={telegram} alt="telegram" />
 					<p>Telegram</p>
-				</div>
+				</a>
 				<div className="header__nav-item">
 					<img src={phone} alt="" />
 					<p>+38(095)590-20-87</p>

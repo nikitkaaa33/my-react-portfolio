@@ -1,6 +1,6 @@
-import "./greeting.scss";
-import me from "../../assets/greeting-me.jpg";
 import React from "react";
+import me from "../../assets/greeting-me.jpg";
+import "./greeting.scss";
 
 const Greeting: React.FC = () => {
 	return (
@@ -18,14 +18,18 @@ const Greeting: React.FC = () => {
 					</div>
 					<div className="greeting_descr-wrapper">
 						<p>
-							I'm Nikita Vaskovskyi, a Frontend Developer from
-							Kyiv,Ukraine with expertise in React and Node.js.
-							I've spent 1,5 years building responsive web
-							applications, mastering the React ecosystem, and
-							developing backend solutions using Node.js and
-							Express.js. I prioritize clean, maintainable code
-							and thrive in collaborative environments. Eager to
-							bring innovative solutions to the table.
+							I am Nikita Vaskovskyi, a passionate junior React
+							developer. My journey into programming began not as
+							a primary career, but as a hobby that I have devoted
+							a significant amount of time to. Over the years, I
+							have grown fond of the art of coding and the
+							challenges it presents. My tech stack includes
+							React, Redux, Node.js, and TypeScript. While I may
+							be a junior in title, my dedication to continuous
+							learning and genuine passion for development drive
+							me to produce high-quality work. I am always eager
+							to collaborate, learn, and push the boundaries of
+							what I know.
 						</p>
 					</div>
 				</div>

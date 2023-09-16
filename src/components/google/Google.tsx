@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useState, useRef, useEffect } from "react";
-import "./google.scss";
 import gitHub from "../../assets/social/gitHub.svg";
 import linkedIn from "../../assets/social/linkedIn.svg";
 import telegram from "../../assets/social/telegram.svg";
 import mail from "../../assets/social/mail.svg";
 import mobile from "../../assets/social/phone.svg";
+import "./google.scss";
 
 const Footer: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -40,17 +40,18 @@ const Footer: React.FC = () => {
 				</iframe>
 
 				<div className="google-link">
-					<a className="google-link-wrapper" href="">
+					<a className="google-link-wrapper" href="" target="_blank">
 						<img src={gitHub} alt="Github" />
 						<p className="google-link-descr">My GitHub</p>
 					</a>
-					<a className="google-link-wrapper" href="">
+					<a className="google-link-wrapper" href="" target="_blank">
 						<img src={linkedIn} alt="linkedin" />
 						<p className="google-link-descr">My LinkedIn</p>
 					</a>
 					<a
 						className="google-link-wrapper"
 						href="mailto:nikita.vaskovskyit@gmail.com"
+						target="_blank"
 					>
 						<img src={mail} alt="e-mail" />
 						<p className="google-link-descr">
@@ -60,11 +61,16 @@ const Footer: React.FC = () => {
 					<a
 						className="google-link-wrapper"
 						href="https://t.me/nikitkaaa33"
+						target="_blank"
 					>
 						<img src={telegram} alt="telegram" />
 						<p className="google-link-descr">My Telegram</p>
 					</a>
-					<a className="google-link-wrapper" href="tel:+380955902087">
+					<a
+						className="google-link-wrapper"
+						href="tel:+380955902087"
+						target="_blank"
+					>
 						<img src={mobile} alt="My telephone number" />
 						<p className="google-link-descr">+38(095)590-20-87</p>
 					</a>

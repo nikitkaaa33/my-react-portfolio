@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./feedBack.scss";
 import fiver from "../../assets/feedBack/fiver.png";
 import upWork from "../../assets/feedBack/upwork.png";
+import "./feedBack.scss";
 
 const FeedBack: React.FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false);

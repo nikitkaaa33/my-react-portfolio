@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { tabContents } from "../../data/data";
 import "./skills.scss";
-import { tabContents, ITabs } from "../../data/data";
-import BG from "../../assets/skillsBG.png";
 
 const Skills = () => {
 	const [activeTab, setActiveTab] = useState<number>(1);

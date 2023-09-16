@@ -1,6 +1,5 @@
 import React from "react";
 import telegram from "../../assets/social/telegram.svg";
-import phone from "../../assets/social/phone.svg";
 import "./pulsatingImages.scss";
 
 const PulsatingImages: React.FC = () => {

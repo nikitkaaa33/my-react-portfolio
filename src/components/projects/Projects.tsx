@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./projects.scss";
 import { cardsData, ICardsData } from "../../data/data";
+import "./projects.scss";
 
 const Card = ({ image, label, text, link }: ICardsData) => (
 	<a href={link} className="card" target="_blank" rel="noopener noreferrer">
@@ -38,14 +38,14 @@ const CardComponent: React.FC = () => {
 				{cardsData.map((card, index) => (
 					<Card key={index} {...card} />
 				))}
-				<p className="card-par">
-					For more visit
-					<br /> my{" "}
-					<a href="https://github.com/nikitkaaa33" target="_blank">
-						GitHub
-					</a>
-				</p>
 			</div>
+			<p className="card-par">
+				For more visit
+				<br /> my{" "}
+				<a href="https://github.com/nikitkaaa33" target="_blank">
+					GitHub
+				</a>
+			</p>
 		</div>
 	);
 };

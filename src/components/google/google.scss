@@ -66,9 +66,19 @@
 	}
 }
 
-@media screen and (min-width: 533px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.google {
 		display: block;
+		img {
+			width: 60px;
+			height: auto;
+			margin-top: 20px;
+		}
+		&-descr {
+			text-align: center;
+			color: #000000;
+			font-size: 20px;
+		}
 		h2 {
 			margin: 0 auto;
 			font-size: 25px;
